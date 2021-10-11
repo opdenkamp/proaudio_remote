@@ -1,0 +1,23 @@
+from homeassistant.components.media_player.const import (
+    SUPPORT_SELECT_SOURCE,
+    SUPPORT_TURN_OFF,
+    SUPPORT_TURN_ON,
+    SUPPORT_VOLUME_MUTE,
+    SUPPORT_VOLUME_SET,
+    SUPPORT_VOLUME_STEP,
+)
+
+DOMAIN="proaudio_remote"
+SIGNAL_PROAUDIO_CONNECTED = "proaudio_connected"
+SIGNAL_PROAUDIO_DISCONNECTED = "proaudio_disconnected"
+SIGNAL_PROAUDIO_ZONE_UPDATE = "proaudio_zone_update"
+
+SUPPORT_BAY_AUDIO_OUTPUT = (
+    SUPPORT_VOLUME_MUTE
+    | SUPPORT_VOLUME_STEP
+    | SUPPORT_VOLUME_SET
+    | SUPPORT_TURN_ON
+    | SUPPORT_TURN_OFF
+    | SUPPORT_SELECT_SOURCE
+)
+
